@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap");
+
+body {
+	overflow-x: hidden;
+	font-family: "Lato", sans-serif;
+	color: #505962;
+	background-color: #505962;
+}
+
+/* Nav Scrolling Offset */
+.offset:before {
+	height: 4rem;
+	margin-top: -4rem;
+	content: "";
+	display: block;
+}
+
+/* Extra Bootstrap Column Padding */
+[class*="col-"] {
+	padding: 1rem;
+}
+
+/*============ NAVIGATION ============*/
+.navbar {
+	padding: 0.7rem 1rem;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	transition: background-color 0.5s ease 0s;
+}
+
+.navbar-brand img {
+	height: 2rem;
+}
+
+.navbar-toggler i {
+	color: #fff;
+	font-size: 1.6rem;
+}
+
+.navbar-nav li {
+	padding-right: 0.8rem;
+}
+
+.navbar-nav .nav-link {
+	color: #fff;
+	padding-top: 0.8rem;
+}
+
+/* nice hover effect when scrolling, by default last link will have .active class */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: #1ebba3;
+}
+
+/* solid color navigation effect */
+.navbar.solid {
+	background: rgba(0, 0, 0, 0.7) !important;
+	transition: background-color 1s ease 0s;
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
