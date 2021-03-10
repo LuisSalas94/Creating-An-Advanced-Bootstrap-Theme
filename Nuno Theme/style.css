@@ -198,6 +198,34 @@ h3.heading {
 	color: #e9ecef;
 }
 
+/*============ Porfolio Section ============*/
+.row.padding {
+	padding: 2rem 0 1rem;
+}
+
+img.example-image {
+	max-width: 100%;
+}
+
+/* pay attention no-padding class */
+.row.no-padding [class*="col-"] {
+	padding: 0;
+}
+
+/* nice hover effect */
+.portfolio-item {
+	overflow: hidden;
+}
+
+.portfolio-item img {
+	transition: transform 0.4s ease;
+}
+
+.portfolio-item img:hover {
+	transform: scale(1.3);
+	cursor: zoom-in;
+}
+
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
